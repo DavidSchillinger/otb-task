@@ -2,24 +2,25 @@
 
 - Covers:
 	- Bootstrapping an application
-    - Semantic HTML
-    - Modular CSS
+	- Semantic HTML
+	- Modular CSS
 	- Testing
 - Doesn't explicitly ask for:
 	- Complex state management
-    - Responsive design
+	- Responsive design
 	- Data mutations
 	- Error handling
-    - HTTP requests
+	- HTTP requests
 	- Localisation
 	- Routing
 	- SSR
 - Explicitly avoid:
-  - Server-side logic
+	- Server-side logic
 
 ## Assumptions
 
 - Basic responsive styling is acceptable
+- Modular CSS refers to JS module scoped styles, i.e. CSS Modules
 - CI/CD configuration is out-of-scope
 - Sorting should only work one field at a time
 - Alphabetical sorting should use a basic locale-aware alphanumeric sort
