@@ -1,7 +1,7 @@
-import {useHotels} from './hotels.tsx'
-import styles from './App.module.css'
+import {useHotels} from './fetch.tsx'
+import styles from './index.module.css'
 
-export default function App() {
+export default function Hotels() {
 	const hotels = useHotels()
 
 	return (

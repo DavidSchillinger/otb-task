@@ -23,7 +23,7 @@ export type Hotel = {
 
 function fetchHotels(): Promise<Hotel[]> {
 	// Just wanted to see if Vite does code splitting out of the box.
-	return import('./hotels.json').then(module => module.default)
+	return import('./data.json').then(module => module.default)
 }
 
 // This should really handle idle and error states, possibly refetch and do caching etc.
