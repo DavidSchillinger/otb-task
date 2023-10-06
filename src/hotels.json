@@ -1,0 +1,62 @@
+[
+	{
+		"id": "7dd27e42-2b5c-4237-86ac-97c26f72eb5b",
+		"hotel": {
+			"name": "Iberostar Grand Salome",
+			"rating": 5,
+			"location": "Costa Adeje, Tenerife",
+			"description": "The Iberostar Grand Salome has an exceptional location in the south of Tenerife, overlooking the Atlantic Ocean. It is situated between the Golf del Sur and the Amarillo Golf courses, and is an ideal hotel for families, couples and groups who are looking for a holiday full of sport, sun and sea."
+		},
+		"booking": {
+			"startDate": "2019-07-03",
+			"durationDays": 7,
+			"price": 1136.50,
+			"guestCount": {
+				"adults": 2,
+				"children": 2,
+				"infants": 1
+			}
+		},
+		"departureLocation": "East Midlands"
+	},
+	{
+		"id": "f0ec3974-fb4e-4fb5-b964-2ac8a2e2c1a4",
+		"hotel": {
+			"name": "Aguamarina Golf Hotel",
+			"rating": 4,
+			"location": "Costa Adeje, Tenerife",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+		},
+		"booking": {
+			"startDate": "2019-05-27",
+			"durationDays": 7,
+			"price": 696.80,
+			"guestCount": {
+				"adults": 2,
+				"children": 1,
+				"infants": 0
+			}
+		},
+		"departureLocation": "Liverpool"
+	},
+	{
+		"id": "674b4c76-4527-4a5b-a07a-717e3c4891ed",
+		"hotel": {
+			"name": "Las Piramides Resort",
+			"rating": 3,
+			"location": "Costa Adeje, Tenerife",
+			"description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		},
+		"booking": {
+			"startDate": "2019-07-03",
+			"durationDays": 7,
+			"price": 499.99,
+			"guestCount": {
+				"adults": 2,
+				"children": 2,
+				"infants": 0
+			}
+		},
+		"departureLocation": "Manchester"
+	}
+]

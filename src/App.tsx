@@ -1,7 +1,11 @@
+import {useHotels} from './hotels.tsx'
+
 export default function App() {
+	const hotels = useHotels()
+
 	return (
 		<main>
-			On the Beach
+			<pre>{JSON.stringify(hotels, null, '\t')}</pre>
 		</main>
 	)
 }
