@@ -1,0 +1,31 @@
+.details {
+	position: relative;
+}
+
+.detailsButton {
+	color: var(--primary);
+	border: 0;
+	cursor: pointer;
+	background: var(--white);
+	padding: 0.75rem 1.25rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.detailsButtonText {
+	margin-top: -2px; /* Nudge the text slightly, so it feels vertically centred. */
+	margin-right: 1rem;
+}
+
+.detailsButtonIcon {
+	margin: -12px; /* The SVG comes with a lot of whitespace that we need to offset. */
+}
+
+.detailsImage {
+	display: block;
+}

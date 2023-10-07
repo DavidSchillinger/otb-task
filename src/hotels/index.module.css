@@ -11,10 +11,22 @@ html {
 	padding: 1rem;
 	width: 100%;
 	max-width: 1200px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 }
 
 @media screen and (min-width: 768px) {
 	.container {
 		padding: 2rem;
+		gap: 5rem;
+		flex-direction: row;
 	}
+}
+
+.hotels {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 }

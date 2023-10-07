@@ -1,6 +1,7 @@
 import styles from './index.module.css'
 import {useHotels} from './fetch.tsx'
 import {SortControls} from './sort.tsx'
+import {HotelCard} from './hotel'
 
 export default function Hotels() {
 	const hotels = useHotels()
@@ -14,9 +15,17 @@ export default function Hotels() {
 					onClickSortPrice={() => null}
 				/>
 
-				<pre style={{margin: 0, overflow: 'auto'}}>
-					{JSON.stringify(hotels, null, '\t')}
-				</pre>
+				{/*
+					Should really have proper loading indication here,
+					error handling, maybe Suspense and/or ErrorBoundary.
+				*/}
+				{hotels === 'PENDING' ? 'Loading...' : (
+					<div className={styles.hotels}>
+						{hotels.map(hotel => (
+							<HotelCard key={hotel.id} option={hotel}/>
+						))}
+					</div>
+				)}
 			</div>
 		</main>
 	)

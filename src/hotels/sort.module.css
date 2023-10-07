@@ -57,7 +57,7 @@
 }
 
 .text {
-	margin-top: -2px; /* Nudge the text slightly to feel vertically centred. */
+	margin-top: -2px; /* Nudge the text slightly, so it feels vertically centred. */
 	margin-right: 1rem;
 }
 
