@@ -7,8 +7,7 @@
 .controls {
 	display: inline-flex;
 	flex-direction: column;
-	width: 250px;
-	max-width: 100%;
+	width: 100%;
 }
 
 .button {
@@ -25,6 +24,31 @@
 
 .button:not(:last-child) {
 	border-bottom: 1px solid var(--primary);
+}
+
+@media screen and (min-width: 450px) {
+	.controls {
+		flex-direction: row;
+		width: auto;
+		max-width: 100%;
+	}
+
+	.button:not(:last-child) {
+		border-right: 1px solid var(--primary);
+		border-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.controls {
+		width: 250px;
+		flex-direction: column;
+	}
+
+	.button:not(:last-child) {
+		border-right: 0;
+		border-bottom: 1px solid var(--primary);
+	}
 }
 
 .button:hover {

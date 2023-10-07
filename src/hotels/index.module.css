@@ -1,3 +1,20 @@
-.main {
+html {
 	background: url('/background.png');
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	padding: 1rem;
+	width: 100%;
+	max-width: 1200px;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		padding: 2rem;
+	}
 }

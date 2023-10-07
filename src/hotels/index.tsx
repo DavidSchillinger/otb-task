@@ -7,13 +7,17 @@ export default function Hotels() {
 
 	return (
 		<main className={styles.main}>
-			<SortControls
-				onClickSortAlphabetical={() => null}
-				onClickSortRating={() => null}
-				onClickSortPrice={() => null}
-			/>
+			<div className={styles.container}>
+				<SortControls
+					onClickSortAlphabetical={() => null}
+					onClickSortRating={() => null}
+					onClickSortPrice={() => null}
+				/>
 
-			<pre style={{margin: 0}}>{JSON.stringify(hotels, null, '\t')}</pre>
+				<pre style={{margin: 0, overflow: 'auto'}}>
+					{JSON.stringify(hotels, null, '\t')}
+				</pre>
+			</div>
 		</main>
 	)
 }
