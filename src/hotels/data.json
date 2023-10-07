@@ -5,6 +5,7 @@
 			"name": "Iberostar Grand Salome",
 			"rating": 5,
 			"location": "Costa Adeje, Tenerife",
+			"imageUrl": "/hotel-image-1.png",
 			"description": "The Iberostar Grand Salome has an exceptional location in the south of Tenerife, overlooking the Atlantic Ocean. It is situated between the Golf del Sur and the Amarillo Golf courses, and is an ideal hotel for families, couples and groups who are looking for a holiday full of sport, sun and sea."
 		},
 		"booking": {
@@ -25,6 +26,7 @@
 			"name": "Aguamarina Golf Hotel",
 			"rating": 4,
 			"location": "Costa Adeje, Tenerife",
+			"imageUrl": "/hotel-image-2.png",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 		},
 		"booking": {
@@ -45,6 +47,7 @@
 			"name": "Las Piramides Resort",
 			"rating": 3,
 			"location": "Costa Adeje, Tenerife",
+			"imageUrl": "/hotel-image-3.png",
 			"description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 		},
 		"booking": {

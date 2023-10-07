@@ -1,13 +1,16 @@
 import {useEffect, useState} from 'react'
 
+export type HotelDetails = {
+	name: string,
+	rating: number,
+	location: string,
+	imageUrl: string;
+	description: string
+}
+
 export type Hotel = {
 	id: string,
-	hotel: {
-		name: string,
-		rating: number,
-		location: string,
-		description: string
-	},
+	hotel: HotelDetails,
 	booking: {
 		startDate: string, // ISO8601
 		durationDays: number,
