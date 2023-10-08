@@ -12,6 +12,9 @@
 	bottom: 0;
 	left: 0;
 
+	width: 275px; /* Try to avoid UI shifting when text length changes. */
+	max-width: 100%;
+
 	display: inline-flex;
 	align-items: center;
 	justify-content: space-between;

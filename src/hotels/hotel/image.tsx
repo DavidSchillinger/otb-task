@@ -1,14 +1,15 @@
 import {ReactNode} from 'react'
-import {HotelDetails} from '../fetch.tsx'
 import classes from './image.module.css'
+import {ExpandLess, ExpandMore} from '@mui/icons-material'
 
 export type HotelImageWithButtonProps = {
-	hotel: HotelDetails,
-	children: ReactNode,
+	hotel: {imageUrl: string, name: string},
+	isExpanded: boolean,
+	onClickToggle: () => void,
 }
 
 export function HotelImageWithButton(props: HotelImageWithButtonProps) {
-	const {hotel, children} = props
+	const {hotel, isExpanded, onClickToggle} = props
 
 	return (
 		<div className={classes.details}>
@@ -18,12 +19,20 @@ export function HotelImageWithButton(props: HotelImageWithButtonProps) {
 				className={classes.detailsImage}
 			/>
 
-			{children}
+			<HotelImageButton onClick={onClickToggle}>
+				{/* Minor UX suggestion here: Use up/down arrows similar to MUI accordion. */}
+				{/* This avoids the button looking a little like a "play" button when collapsed. */}
+				{/* I wouldn't normally write this as a comment in the code, I'd ask a UX/UI designer. */}
+				{{
+					text: <span><b>{isExpanded ? 'Read less' : 'Read more'}</b> about this hotel</span>,
+					icon: isExpanded ? <ExpandLess fontSize='large'/> : <ExpandMore fontSize='large'/>,
+				}}
+			</HotelImageButton>
 		</div>
 	)
 }
 
-export type HotelImageButtonProps = {
+type HotelImageButtonProps = {
 	onClick: () => void,
 	children: {
 		text: ReactNode,
@@ -31,7 +40,7 @@ export type HotelImageButtonProps = {
 	}
 }
 
-export function HotelImageButton(props: HotelImageButtonProps) {
+function HotelImageButton(props: HotelImageButtonProps) {
 	const {onClick, children: {text, icon}} = props
 
 	return (

@@ -1,7 +1,6 @@
-import {useEffect} from 'react'
+import {useEffect, useState} from 'react'
 import {Hotel} from '../fetch.tsx'
-import {ExpandMore} from '@mui/icons-material'
-import {HotelImageButton, HotelImageWithButton} from './image.tsx'
+import {HotelImageWithButton} from './image.tsx'
 
 export type HotelCardProps = {
 	option: Hotel,
@@ -10,20 +9,19 @@ export type HotelCardProps = {
 export function HotelCard(props: HotelCardProps) {
 	const {option} = props
 
+	const [isExpanded, setIsExpanded] = useState(false)
+
 	useEffect(() => {
 		console.log(option)
 	}, [option])
 
 	return (
 		<article>
-			<HotelImageWithButton hotel={option.hotel}>
-				<HotelImageButton onClick={() => null}>
-					{{
-						text: <span><b>Read more</b> about this hotel</span>,
-						icon: <ExpandMore fontSize='large'/>,
-					}}
-				</HotelImageButton>
-			</HotelImageWithButton>
+			<HotelImageWithButton
+				hotel={option.hotel}
+				isExpanded={isExpanded}
+				onClickToggle={() => setIsExpanded(c => !c)}
+			/>
 		</article>
 	)
 }
