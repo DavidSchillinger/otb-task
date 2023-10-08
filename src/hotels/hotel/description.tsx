@@ -11,6 +11,8 @@ export function HotelDescription(props: HotelDescriptionProps) {
 	const {children, isVisible} = props
 
 	return (
+		// Alternatively we could conditionally render the entire block, but avoiding the expand/collapse
+		// complexity entirely seemed like it could be an improvement for a11y. I'd want to discuss/research this.
 		<div className={isVisible ? classes.description : `${classes.description} ${classes.srOnly}`}>
 			<h2 className={classes.descriptionHeading}>
 				Overview
