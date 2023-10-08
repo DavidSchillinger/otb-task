@@ -37,14 +37,7 @@ export function HotelAndBookingDetails(props: HotelAndBookingDetailsProps) {
 				<DepartureLocation location={departureLocation}/>
 			</div>
 
-			<button
-				type='button'
-				onClick={() => null}
-				className={classes.bookButton}
-			>
-				Book now <br/>
-				£{booking.price}
-			</button>
+			<BookButton price={booking.price}/>
 		</div>
 	)
 }
@@ -96,5 +89,22 @@ function DepartureLocation(props: {location: string}) {
 			{/* Should this use an uppercase D? lowercase feels a bit odd to me */}
 			<span>departing from <b>{location}</b></span>
 		</div>
+	)
+}
+
+const currencyGBP = new Intl.NumberFormat(undefined, {style: 'currency', currency: 'GBP'})
+
+function BookButton(props: {price: number}) {
+	const {price} = props
+
+	return (
+		<button
+			type='button'
+			onClick={() => null}
+			className={classes.bookButton}
+		>
+			Book now <br/>
+			{currencyGBP.format(price)}
+		</button>
 	)
 }
