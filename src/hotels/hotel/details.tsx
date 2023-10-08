@@ -2,6 +2,8 @@ import classes from './details.module.css'
 import {Hotel, HotelBooking, HotelBookingGuestCount} from '../fetch.tsx'
 import {Star} from '@mui/icons-material'
 
+// This has no test file to save some time, in reality I'd expect to test this similar to the other implementations.
+
 export type HotelAndBookingDetailsProps = {option: Hotel}
 
 export function HotelAndBookingDetails(props: HotelAndBookingDetailsProps) {

@@ -2,7 +2,11 @@ import {Hotel} from './fetch.tsx'
 import {useMemo, useState} from 'react'
 import {ascend, descend} from 'ramda'
 
-export enum Sort {Name, Rating, Price}
+export enum Sort {
+	Name = 'Name',
+	Rating = 'Rating',
+	Price = 'Price',
+}
 
 export function useSort(hotels: Hotel[]) {
 	const [activeSort, setActiveSort] = useState(Sort.Price)
