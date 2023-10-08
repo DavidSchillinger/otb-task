@@ -11,7 +11,7 @@ export type HotelDetails = {
 export type HotelBooking = {
 	startDate: string, // ISO8601
 	durationDays: number,
-	price: number, // float
+	price: number,
 	guestCount: HotelBookingGuestCount,
 }
 
