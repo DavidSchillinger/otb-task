@@ -11,7 +11,7 @@ export default function Hotels() {
 		<main className={styles.main}>
 			<div className={styles.container}>
 				{/*
-					Should really have proper loading indication here,
+					In reality, we'd want proper loading indication here,
 					error handling, maybe Suspense and/or ErrorBoundary.
 				*/}
 				{hotels === 'PENDING' ? null : (
