@@ -43,7 +43,7 @@ describe('HotelImageWithButton', () => {
 
 		expect(onClickToggle).not.toHaveBeenCalled()
 
-		await userEvent.click(getByRole('button'))
+		await userEvent.click(getByRole('button', {hidden: true}))
 		expect(onClickToggle).toHaveBeenCalledOnce()
 	})
 })
