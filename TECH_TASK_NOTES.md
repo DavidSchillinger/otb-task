@@ -23,8 +23,12 @@
 - Modular CSS refers to JS module scoped styles, e.g. CSS Modules
 - Basic CSS is acceptable, alternatively I'd probably suggest Tailwind/Styled Components/Emotion or similar.
 - CI/CD configuration is out-of-scope
-- Sorting should only work one field at a time
-- Alphabetical sorting should use a basic locale-aware alphanumeric sort
+- Sorting
+	- Works only one field at a time
+	- Reversing order is impossible (i.e. switch between ascending/descending)
+	- Alphabetical is ascending (A-Z)
+	- Price sort is descending (most expensive first)
+	- Rating sort is descending (highest rating first)
 - A fake API request for "fetching" data is acceptable to show basic async code
 - Hotel bookings have at least 1 adult guest (simplifies formatting)
 - IE11 is not supported (for CSS object-fit and grid), possible to rework to support IE if necessary

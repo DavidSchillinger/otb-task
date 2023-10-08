@@ -46,7 +46,9 @@
 	}
 }
 
-.button:hover {
+/* In reality, we'd want these to be somewhat split so that hovering an active button shows some indication. */
+.button:hover,
+.activeButton {
 	color: var(--white);
 	background: var(--primary);
 }
@@ -60,6 +62,7 @@
 	color: var(--secondary-icon);
 }
 
-.button:hover .icon {
+.button:hover .icon,
+.activeButton .icon {
 	color: var(--white);
 }

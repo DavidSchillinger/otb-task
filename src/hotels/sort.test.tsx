@@ -2,6 +2,7 @@ import {describe, expect, it, vi} from 'vitest'
 import {render} from '@testing-library/react/pure'
 import {userEvent} from '@testing-library/user-event'
 import {SortControls} from './sort.tsx'
+import {Sort} from './sort.hook.tsx'
 
 vi.mock('@mui/icons-material', () => ({
 	CurrencyPound: () => <div>CurrencyPound</div>,
@@ -13,6 +14,7 @@ describe('SortControls', () => {
 	it('should render', () => {
 		const {getAllByRole} = render(
 			<SortControls
+				activeSort={Sort.Price}
 				onClickSortAlphabetical={() => null}
 				onClickSortRating={() => null}
 				onClickSortPrice={() => null}
@@ -34,6 +36,7 @@ describe('SortControls', () => {
 
 		const {getAllByRole} = render(
 			<SortControls
+				activeSort={Sort.Price}
 				onClickSortAlphabetical={onClickSortAlphabeticalSpy}
 				onClickSortRating={onClickSortRatingSpy}
 				onClickSortPrice={onClickSortPriceSpy}
