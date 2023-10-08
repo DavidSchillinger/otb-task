@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react'
+import {useState} from 'react'
 import classes from './index.module.css'
 import {Hotel} from '../fetch.tsx'
 import {HotelImageWithButton} from './image.tsx'
@@ -13,10 +13,6 @@ export function HotelCard(props: HotelCardProps) {
 	const {option} = props
 
 	const [isExpanded, setIsExpanded] = useState(false)
-
-	useEffect(() => {
-		console.log(option)
-	}, [option])
 
 	return (
 		<article className={classes.card}>
