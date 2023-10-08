@@ -8,19 +8,23 @@ export type HotelDetails = {
 	description: string
 }
 
+export type HotelBooking = {
+	startDate: string, // ISO8601
+	durationDays: number,
+	price: number, // float
+	guestCount: HotelBookingGuestCount,
+}
+
+export type HotelBookingGuestCount = {
+	adults: number,
+	children: number,
+	infants: number
+}
+
 export type Hotel = {
 	id: string,
 	hotel: HotelDetails,
-	booking: {
-		startDate: string, // ISO8601
-		durationDays: number,
-		price: number, // float
-		guestCount: {
-			adults: number,
-			children: number,
-			infants: number
-		}
-	},
+	booking: HotelBooking,
 	departureLocation: string
 };
 

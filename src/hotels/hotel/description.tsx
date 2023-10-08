@@ -13,7 +13,7 @@ export function HotelDescription(props: HotelDescriptionProps) {
 	return (
 		// Alternatively we could conditionally render the entire block, but avoiding the expand/collapse
 		// complexity entirely seemed like it could be an improvement for a11y. I'd want to discuss/research this.
-		<div className={isVisible ? classes.description : `${classes.description} ${classes.srOnly}`}>
+		<div className={isVisible ? classes.description : `${classes.description} sr-only`}>
 			<h2 className={classes.descriptionHeading}>
 				Overview
 			</h2>

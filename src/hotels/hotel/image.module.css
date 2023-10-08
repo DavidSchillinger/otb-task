@@ -1,8 +1,10 @@
-.details {
+.container {
+	grid-area: Image;
+
 	position: relative;
 }
 
-.detailsButton {
+.button {
 	color: var(--primary);
 	border: 0;
 	cursor: pointer;
@@ -12,7 +14,7 @@
 	bottom: 0;
 	left: 0;
 
-	width: 275px; /* Try to avoid UI shifting when text length changes. */
+	width: var(--hotel-image-button-width);
 	max-width: 100%;
 
 	display: inline-flex;
@@ -20,16 +22,18 @@
 	justify-content: space-between;
 }
 
-.detailsButtonText {
+.buttonText {
 	margin-top: -3px; /* Nudge the text slightly, so it feels vertically centred. */
 	margin-right: 1rem;
 }
 
-.detailsButtonIcon {
+.buttonIcon {
 	margin: -12px; /* The SVG comes with a lot of whitespace that we need to offset. */
 }
 
-.detailsImage {
-	width: 500px;
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 	display: block;
 }

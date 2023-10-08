@@ -12,11 +12,11 @@ export function HotelImageWithButton(props: HotelImageWithButtonProps) {
 	const {hotel, isExpanded, onClickToggle} = props
 
 	return (
-		<div className={classes.details}>
+		<div className={classes.container}>
 			<img
 				src={hotel.imageUrl}
 				alt={hotel.name}
-				className={classes.detailsImage}
+				className={classes.image}
 			/>
 
 			<HotelImageButton onClick={onClickToggle}>
@@ -47,14 +47,14 @@ function HotelImageButton(props: HotelImageButtonProps) {
 		<button
 			type='button'
 			onClick={onClick}
-			className={classes.detailsButton}
+			className={classes.button}
 			aria-hidden // This can be hidden because the description always "shows" for SRs.
 		>
-			<span className={classes.detailsButtonText}>
+			<span className={classes.buttonText}>
 				{text}
 			</span>
 
-			<span className={classes.detailsButtonIcon}>
+			<span className={classes.buttonIcon}>
 				{icon}
 			</span>
 		</button>

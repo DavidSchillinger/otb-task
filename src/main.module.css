@@ -1,0 +1,19 @@
+:root {
+	--white: white; /* In case we want an off-white in the future. */
+	--primary: #17317f;
+	--secondary-text: #888;
+	--secondary-icon: #d4d4d4;
+}
+
+:global(.sr-only) {
+	/* Tailwind's .sr-only - I normally wouldn't copy/paste this, instead I'd use whatever utility is available. */
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
