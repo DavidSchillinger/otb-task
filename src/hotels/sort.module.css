@@ -42,6 +42,7 @@
 @media screen and (min-width: 768px) {
 	.controls {
 		width: 250px;
+		flex-shrink: 0;
 		flex-direction: column;
 	}
 

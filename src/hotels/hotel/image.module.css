@@ -21,7 +21,7 @@
 }
 
 .detailsButtonText {
-	margin-top: -2px; /* Nudge the text slightly, so it feels vertically centred. */
+	margin-top: -3px; /* Nudge the text slightly, so it feels vertically centred. */
 	margin-right: 1rem;
 }
 
@@ -30,5 +30,6 @@
 }
 
 .detailsImage {
+	width: 500px;
 	display: block;
 }

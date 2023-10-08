@@ -48,6 +48,7 @@ function HotelImageButton(props: HotelImageButtonProps) {
 			type='button'
 			onClick={onClick}
 			className={classes.detailsButton}
+			aria-hidden // This can be hidden because the description always "shows" for SRs.
 		>
 			<span className={classes.detailsButtonText}>
 				{text}

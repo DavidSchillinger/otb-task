@@ -1,0 +1,35 @@
+.card {
+	display: grid;
+	background: white;
+
+	grid-template-columns: min-content 1fr;
+}
+
+.description {
+	padding: 1.25rem;
+	grid-column: span 2;
+}
+
+.descriptionHeading {
+	margin-top: 0;
+	font-size: 1rem;
+	font-weight: bold;
+	color: var(--primary);
+}
+
+.descriptionContent {
+	margin: 0;
+}
+
+.srOnly {
+	/* Tailwind's .sr-only - I normally wouldn't copy/paste this and use whatever utility is available instead. */
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
